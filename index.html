@@ -1,0 +1,214 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Kyrgyzstan | Non-official tourism web-page</title>
+		<meta charset = "utf-8">
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+		<link rel="stylesheet" type="text/css" href="css/main.css">
+		<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/jquery.scrollify.js"></script>
+		<script src="http://www.youtube.com/player_api" id="YTAPI"></script>
+		<script src="js/jquery.mb.YTPlayer.js"></script>
+		<link href='https://fonts.googleapis.com/css?family=Open+Sans:300&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+		<script>
+            $(function() {
+                $.scrollify({
+                    section : ".scroll",
+        			scrollSpeed: 700,
+                });
+            });
+            $(document).ready(function(){
+    			$('.go_to').click( function(){ // ловим клик по ссылке с классом go_to
+						var scroll_el = $(this).attr('href'); // возьмем содержимое атрибута href, должен быть селектором, т.е. например начинаться с # или .
+        				if ($(scroll_el).length != 0) { // проверим существование элемента чтобы избежать ошибки
+	    				$('html, body').animate({ scrollTop: $(scroll_el).offset().top }, 500); // анимируем скроолинг к элементу scroll_el
+        				}
+	    				return false; // выключаем стандартное действие
+    				});
+				});
+        </script>
+	</head>
+	<body>
+		<div class="main-block scroll">
+			<a id="bgndVideo" class="player mb_YTVPlayer" data-property="{videoURL:'https://www.youtube.com/watch?v=21wyy2EVlUs',containment:'body',autoPlay:true, mute:true, startAt:0, opacity:1}" style="display: none; background: none;"></a>
+			<div class="mainlogoblock">
+				<img class="mainlogo" src="img/mainlogo.png">
+			</div>
+			<nav class="navbar navbar-default navbar-fixed-bottom">
+  				<div class="container">
+				    <!-- Brand and toggle get grouped for better mobile display -->
+				    <div class="navbar-header">
+				      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+				        <span class="sr-only">Toggle navigation</span>
+				        <span class="icon-bar"></span>
+				        <span class="icon-bar"></span>
+				        <span class="icon-bar"></span>
+				      </button>
+				    </div>
+
+				    <!-- Collect the nav links, forms, and other content for toggling -->
+				    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				      <ul class="nav navbar-nav">
+				        <li class="mountainsbtn"><a href="#mountains" class="go_to">MOUNTAINS</a></li>
+				        <li class="lakebtn"><a href="#lake" class="go_to">ISSYK-KUL LAKE</a></li>
+				        <li class="culturebtn"><a href="#culture" class="go_to">CULTURE</a></li>
+				        <li class="peoplebtn"><a href="#people" class="go_to">PEOPLE</a></li>
+				        <li class="healthbtn"><a href="#healthcare" class="go_to">HEALTHCARE PROCEDURES</a></li>
+				        <li class="pricebtn"><a href="#price" class="go_to">PRICES</a></li>
+				      </ul>
+				      <ul class="nav navbar-nav navbar-right">
+				        <li><a href="#">LANGUAGE</a></li>
+				      </ul>
+				    </div><!-- /.navbar-collapse -->
+				  </div><!-- /.container-fluid -->
+			</nav>
+		</div>
+		<div class="mountains scroll" id="mountains">
+			<div class="container">
+				<div class="col-sm-4 text-block">
+					<h3>WELCOME TO THE LAND OF HIGH MOUNTAINS</h3>
+					<p>Lorem ipsum dolor sit amet, habeo putent evertitur sed eu, tacimates sensibus has ut? Est quis lucilius dissentiet at, eum at ullum alienum sententiae. Ea usu ipsum oblique volutpat, cum cu iusto omnesque lucilius. Alterum gloriatur nec id, consetetur scripserit eos ut. Duo novum primis euismod cu, vel ea probatus senserit vituperata, debitis voluptua qualisque vis te.</p>
+					<p>Eu usu ceteros accommodare, cu vivendo inimicus vim. Ne quem constituam quo. Equidem ornatus ea cum. Nihil corrumpit sea ea, ex vis tollit debitis repudiare. Aliquam bonorum constituam est ne, per vocent perfecto in. Ei ius malis corpora evertitur.</p>
+					<a href="mountains.html" class="button">
+						LIST OF MOUNTAINS
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="lake scroll" id="lake">
+			<div class="container">
+				<div class="row">
+					<h1>THE LAKE SURROUNDED<br>BY THOUSANDS OF LEGENDS</h1>
+				</div>
+				<div class="row">
+					<div class="col-sm-4">
+						<p>Lorem ipsum dolor sit amet, habeo putent evertitur sed eu, tacimates sensibus has ut? Est quis lucilius dissentiet at, eum at ullum alienum sententiae. Ea usu ipsum oblique volutpat, cum cu iusto omnesque lucilius. Alterum gloriatur nec id, consetetur scripserit eos ut. Duo novum primis euismod cu, vel ea probatus senserit vituperata, debitis voluptua qualisque vis te.</p>
+					</div>
+					<div class="col-sm-4">
+						<p>Eu usu ceteros accommodare, cu vivendo inimicus vim. Ne quem constituam quo. Equidem ornatus ea cum. Nihil corrumpit sea ea, ex vis tollit debitis repudiare. Aliquam bonorum constituam est ne, per vocent perfecto in. Ei ius malis corpora evertitur.</p>
+					</div>
+					<div class="col-sm-4">
+						<p>Eu usu ceteros accommodare, cu vivendo inimicus vim. Ne quem constituam quo. Equidem ornatus ea cum. Nihil corrumpit sea ea, ex vis tollit debitis repudiare. Aliquam bonorum constituam est ne, per vocent perfecto in. Ei ius malis corpora evertitur.</p>
+						<a href="lake.html" class="button">
+							VISIT
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="culture scroll" id="culture">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-7">
+
+					</div>
+					<div class="col-sm-5">
+						<div class="text-block">
+							<h3>THE HISTORY OF NOMAD PEOPLE WELCOMES YOU</h3>
+							<p>Lorem ipsum dolor sit amet, habeo putent evertitur sed eu, tacimates sensibus has ut? Est quis lucilius dissentiet at, eum at ullum alienum sententiae. Ea usu ipsum oblique volutpat, cum cu iusto omnesque lucilius. Alterum gloriatur nec id, consetetur scripserit eos ut. Duo novum primis euismod cu, vel ea probatus senserit vituperata, debitis voluptua qualisque vis te.</p>
+							<p>Eu usu ceteros accommodare, cu vivendo inimicus vim. Ne quem constituam quo. Equidem ornatus ea cum. Nihil corrumpit sea ea, ex vis tollit debitis repudiare. Aliquam bonorum constituam est ne, per vocent perfecto in. Ei ius malis corpora evertitur.</p>
+							<a href="culture" class="button">READ MORE</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="people scroll" id="people">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-12">
+						<h1>MOST HOSPITABLE PEOPLE<br>IN CENTRAL ASIA</h1>
+					</div>
+				</div>
+			</div>
+			<div class="container peopleWrapper">
+				<div class="row">
+						<div class="col-sm-4">
+							<p>Lorem ipsum dolor sit amet, habeo putent evertitur sed eu, tacimates sensibus has ut? Est quis lucilius dissentiet at, eum at ullum alienum sententiae. Ea usu ipsum oblique volutpat, cum cu iusto omnesque lucilius. Alterum gloriatur nec id, consetetur scripserit eos ut. Duo novum primis euismod cu, vel ea probatus senserit vituperata, debitis voluptua qualisque vis te.</p>
+						</div>
+						<div class="col-sm-4">
+							<p>Eu usu ceteros accommodare, cu vivendo inimicus vim. Ne quem constituam quo. Equidem ornatus ea cum. Nihil corrumpit sea ea, ex vis tollit debitis repudiare. Aliquam bonorum constituam est ne, per vocent perfecto in. Ei ius malis corpora evertitur.</p>
+						</div>
+						<div class="col-sm-4">
+							<p>Eu usu ceteros accommodare, cu vivendo inimicus vim. Ne quem constituam quo. Equidem ornatus ea cum. Nihil corrumpit sea ea, ex vis tollit debitis repudiare. Aliquam bonorum constituam est ne, per vocent perfecto in. Ei ius malis corpora evertitur.</p>
+							<a href="http://www.homeexchange.com/" class="button">
+								CHECK US ON HOMEEXCHANGE.COM
+							</a>
+						</div>
+					</div>
+				</div>
+		</div>
+		<div class="healthcare scroll" id="healthcare">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-7">
+
+					</div>
+					<div class="col-sm-5">
+						<div class="text-block">
+							<h3>WE WILL PUT YOU BACK ON YOUR KNEES</h3>
+							<p>Lorem ipsum dolor sit amet, habeo putent evertitur sed eu, tacimates sensibus has ut? Est quis lucilius dissentiet at, eum at ullum alienum sententiae. Ea usu ipsum oblique volutpat, cum cu iusto omnesque lucilius. Alterum gloriatur nec id, consetetur scripserit eos ut. Duo novum primis euismod cu, vel ea probatus senserit vituperata, debitis voluptua qualisque vis te.</p>
+							<p>Eu usu ceteros accommodare, cu vivendo inimicus vim. Ne quem constituam quo. Equidem ornatus ea cum. Nihil corrumpit sea ea, ex vis tollit debitis repudiare. Aliquam bonorum constituam est ne, per vocent perfecto in. Ei ius malis corpora evertitur.</p>
+							<a href="culture" class="button">TRY IT</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="prices scroll" id="price">
+			<div class="container">
+				<div class="col-sm-4">
+					<div class="comtab">
+						<h3>
+							TOURS FROM 435$
+						</h3>
+						<span>
+							by Kyrgyz Concept
+						</span>
+						<p>
+							Lorem ipsum dolor sit amet, habeo putent evertitur sed eu, tacimates sensibus has ut? Est quis lucilius dissentiet at, eum at ullum alienum sententiae. Ea usu ipsum oblique volutpat, cum cu iusto omnesque lucilius. Alterum gloriatur nec id, consetetur scripserit eos ut. Duo novum primis euismod cu, vel ea probatus senserit vituperata, debitis voluptua qualisque vis te.
+						</p>
+						<a href="#order" class="button">ORDER</a>
+						<a href="#order" class="button" style="margin-left: 10px;">MORE INFO...</a>
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<div class="comtab">
+						<h3>
+							TOURS FROM 335$
+						</h3>
+						<span>
+							by Turkish Smiles
+						</span>
+						<p>
+							Lorem ipsum dolor sit amet, habeo putent evertitur sed eu, tacimates sensibus has ut? Est quis lucilius dissentiet at, eum at ullum alienum sententiae. Ea usu ipsum oblique volutpat, cum cu iusto omnesque lucilius. Alterum gloriatur nec id, consetetur scripserit eos ut. Duo novum primis euismod cu, vel ea probatus senserit vituperata, debitis voluptua qualisque vis te.
+						</p>
+						<a href="#order" class="button">ORDER</a>
+						<a href="#order" class="button" style="margin-left: 10px;">MORE INFO...</a>
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<div class="comtab">
+						<h3>
+							TOURS FROM 735$
+						</h3>
+						<span>
+							by Manas Tours
+						</span>
+						<p>
+							Lorem ipsum dolor sit amet, habeo putent evertitur sed eu, tacimates sensibus has ut? Est quis lucilius dissentiet at, eum at ullum alienum sententiae. Ea usu ipsum oblique volutpat, cum cu iusto omnesque lucilius. Alterum gloriatur nec id, consetetur scripserit eos ut. Duo novum primis euismod cu, vel ea probatus senserit vituperata, debitis voluptua qualisque vis te.
+						</p>
+						<a href="#order" class="button">ORDER</a>
+						<a href="#order" class="button" style="margin-left: 10px;">MORE INFO...</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script>  
+			$(function(){
+      			$(".player").mb_YTPlayer();
+    		});
+    	</script>
+	</body>
+</html>

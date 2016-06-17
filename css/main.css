@@ -1,0 +1,199 @@
+@font-face {
+    font-family: "FuturaRoundBold";
+    src: url("../fonts/FuturaRoundBold.eot");
+    src: url("../fonts/FuturaRoundBold.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/FuturaRoundBold.woff") format("woff"),
+    url("../fonts/FuturaRoundBold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+.main-block {
+	height: 100vh;
+	width: 100%;
+    z-index: 550;
+    background: url(../img/mainbghover.png);
+}
+.mountains {
+	-webkit-box-shadow: inset 0px 5px 7px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: inset 0px 5px 7px 0px rgba(0,0,0,0.75);
+	box-shadow: inset 0px 5px 7px 0px rgba(0,0,0,0.75);
+	background: url(../img/mountainbg.png) fixed;
+	background-position: center top;
+	height: 100vh;
+	width: 100%;
+}
+.mainlogoblock {
+	text-align: center;
+}
+.mainlogo {
+	height: 50vh;
+	align: center;
+	margin-top: 20vh;
+}
+nav li {
+	font-family: 'FuturaRoundBold';
+	font-size: 20px;
+	color: #ffffff;
+}
+h3 {
+	font-family : 'FuturaRoundBold';
+	font-weight : bold;
+	font-size : 27px;
+	letter-spacing: 1px;
+	color : #FFFFFF;
+	color : rgb(255, 255, 255);
+	text-shadow : 3px 3px 3px rgba(29, 29, 27, 0.75);
+}
+h1 {
+	font-family : 'FuturaRoundBold';
+	font-weight : bold;
+	font-size : 50px;
+	letter-spacing: 1px;
+	color : #FFFFFF;
+	color : rgb(255, 255, 255);
+	text-shadow : 3px 3px 3px rgba(29, 29, 27, 0.75);
+	text-align: center;
+}
+.lake h1 {
+	margin-top: 170px;
+	margin-bottom: 50px;
+}
+.mountains .text-block h3 {
+	margin-bottom: 35px;
+}
+p {
+	font-family: 'Open Sans', sans-serif;
+  	font-size : 15px;
+  	color : #FFFFFF;
+  	color : rgb(255, 255, 255);
+  	text-shadow : 3px 3px 3px rgba(29, 29, 27, 0.75);
+}
+.text-block {
+	padding-top: 50px;
+	padding-right: 23px;
+	padding-left: 23px;
+	padding-bottom: 60px;
+	background: -moz-linear-gradient(top, rgba(220,114,15,0.7) 0%, rgba(210,23,25,0.7) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, rgba(220,114,15,0.7) 0%,rgba(210,23,25,0.7) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, rgba(220,114,15,0.7) 0%,rgba(210,23,25,0.7) 100%);
+}
+.button {
+	display: inline-block;
+	border: 1px white solid;
+	padding: 10px 15px;
+	font-family: 'FuturaRoundBold';
+	color: white;
+	width: auto;
+	margin-top: 20px;
+	letter-spacing: 2px;
+}
+.button:hover {
+	color: rgba(210,23,25,1);
+	background-color: white;
+	text-decoration: none;
+}
+.lake .button:hover {
+	color: #25378A;
+}
+.lake {
+	height: 100vh;
+	background: url('../img/mainbg.png');
+}
+.culture {
+	height: 100vh;
+	background: url('../img/culturebg.png');
+	background-size: 100vw auto;
+	background-position: center;
+}
+.healthcare {
+	height: 100vh;
+	background: url('../img/healthcarebg.png');
+	background-size: 100vw auto;
+}
+.people {
+	height: 100vh;
+	background: url('../img/peoplebg.png');
+	background-size: 100vw auto;
+	position: relative;
+}
+.people h1 {
+	text-align: center;
+	margin-top: 50px;
+	font-size: 40px;
+}
+.prices {
+	height: 100vh;
+}
+.culture h3 {
+	margin-bottom: 35px;
+}
+.culture .text-block {
+	background: -moz-linear-gradient(top, rgba(51,135,39,0.5) 0%, rgba(131,187,39,0.8) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, rgba(51,135,39,0.5) 0%,rgba(131,187,39,0.8) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, rgba(51,135,39,0.5) 0%,rgba(131,187,39,0.8) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#80338727', endColorstr='#8083bb27',GradientType=0 );
+}
+.culture .button:hover {
+	color: rgba(131,187,39,0.8);
+}
+.comtab {
+	padding-left: 23px;
+	padding-right: 23px;
+	background: white;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+.comtab h3 {
+	color: black;
+	text-shadow: none;
+}
+.comtab p {
+	color: black;
+	text-shadow: none;
+	margin-top: 15px;
+}
+.comtab span {
+	text-transform: uppercase;
+	font-family: 'Open Sans';
+	letter-spacing: 2px;
+}
+.comtab .button {
+	color: black;
+	border-color: black;
+}
+.comtab .button:hover {
+	color: white;
+	background-color: black;
+	border-color: white;
+}
+.peopleWrapper {
+	background-color: rgba(210,23,25,0.7);
+	margin-top: 60px;
+	padding-top: 40px;
+	padding-bottom: 60px;
+	position: absolute;
+	bottom: 0;
+	left: 50%; 
+	margin-left: -570px;
+}
+.navbar-default .navbar-nav > .mountainsbtn > a:hover {
+	color: rgba(210,23,25,1);
+}
+.navbar-default .navbar-nav > .lakebtn > a:hover {
+	color: #25378A;
+}
+.navbar-default .navbar-nav > .culturebtn > a:hover {
+	color: rgba(131,187,39,0.8);
+}
+.navbar-default .navbar-nav > .peoplebtn > a:hover {
+	color: rgba(210,23,25,0.7);
+}
+.navbar-default .navbar-nav > .healthbtn > a:hover {
+	color: rgba(220,114,15,1);
+}
+.navbar-default .navbar-nav > .pricebtn > a:hover {
+	color: gray;
+}
